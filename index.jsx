@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 //mongoose.connect("mongodb://localhost:27017/student");
- mongoose.connect("mongodb://127.0.0.1:27017/student");
+ mongoose.connect("mongodb://127.0.0.1:27017/students");
 
 app.get("/getStudents", (req, res) => {
   studentModel
